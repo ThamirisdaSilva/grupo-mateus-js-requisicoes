@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo — Grupo Mateus</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Catálogo de treinamento</h1>
+    <p>Dados fictícios. O envio à API é uma simulação e não grava produtos.</p>
+    <button id="buscar" type="button">Buscar produtos</button>
+    <p id="mensagem" role="status" aria-live="polite">Clique para consultar.</p>
+    <ul id="lista"></ul>
+    <section>
+      <h2>Simular cadastro — etapa de continuação</h2>
+      <form id="formulario" name="formulario">
+        <label for="nome">Nome</label>
+        <input id="nome" required maxlength="80" type="text" name="nome" placeholder="Nome do produto">
+        <label for="preco">Preço fictício (sem conversão de moeda)</label>
+        <input id="preco" type="number" min="0.01" step="0.01" required>
+        <button id="salvar" type="submit">Simular envio</button>
+      </form>
+      <p id="resultado" role="status" aria-live="polite">Formulário ainda sem JavaScript.</p>
+    </section>
+  </main>
+</body>
+</html>
